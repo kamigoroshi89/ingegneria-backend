@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pbds",
+  "info": {
+    "singularName": "pbd",
+    "pluralName": "pbds",
+    "displayName": "Privacy By Design Principles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PBD": {
+      "type": "string"
+    },
+    "patterns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pattern.pattern",
+      "mappedBy": "pbds"
+    }
+  }
+}
